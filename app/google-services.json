@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "446467572386",
+    "firebase_url": "https://esp32-humidity-b14bc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "esp32-humidity-b14bc",
+    "storage_bucket": "esp32-humidity-b14bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446467572386:android:37551114e5cc1ca22ecdfb",
+        "android_client_info": {
+          "package_name": "com.example.smarthumidity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446467572386-9fimp9a5jrg2f8qghdg5lll3sampjj2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjh6yaRumDWl5DYbdDA9JLm7S-RSyIY_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446467572386-9fimp9a5jrg2f8qghdg5lll3sampjj2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

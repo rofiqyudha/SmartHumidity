@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SmartHumidity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Aplikasi pengaturan alat kelembaban berbasis android adalah sebuah aplikasi yang dirancang untuk membantu pengguna mengontrol dan mengatur tingkat kelembaban di dalam sebuah ruangan atau area tertentu dengan menggunakan perangkat android. Aplikasi ini biasanya digunakan bersama dengan alat pengukur kelembaban, seperti hygrometer, yang terhubung ke perangkat android melalui koneksi bluetooth atau wifi.\n\nAplikasi pengaturan alat kelembaban berbasis android dapat membantu pengguna untuk mengukur dan memantau tingkat kelembaban di dalam ruangan secara real-time. Selain itu, aplikasi ini juga dapat memberikan informasi dan saran tentang bagaimana cara mengatur tingkat kelembaban yang tepat untuk mencapai kenyamanan dan kesehatan yang optimal.</string>
+</resources>
