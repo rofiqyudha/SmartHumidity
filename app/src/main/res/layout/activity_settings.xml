@@ -8,7 +8,7 @@
     tools:context=".SettingsActivity">
 
     <FrameLayout
-        android:id="@+id/frame1"
+        android:id="@+id/framepersonal"
         android:layout_width="365dp"
         android:layout_height="40dp"
         android:layout_marginTop="50dp"
@@ -39,14 +39,14 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/framenotification"
         android:layout_width="365dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_background_white"
-        app:layout_constraintEnd_toEndOf="@+id/frame1"
-        app:layout_constraintStart_toStartOf="@+id/frame1"
-        app:layout_constraintTop_toBottomOf="@+id/frame1">
+        app:layout_constraintEnd_toEndOf="@+id/framepersonal"
+        app:layout_constraintStart_toStartOf="@+id/framepersonal"
+        app:layout_constraintTop_toBottomOf="@+id/framepersonal">
 
         <TextView
             android:id="@+id/tvnotification"
@@ -69,15 +69,15 @@
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/frameLayout2"
+        android:id="@+id/frameaccount"
         android:layout_width="365dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_background_white"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="@+id/framenotification"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+        app:layout_constraintStart_toStartOf="@+id/framenotification"
+        app:layout_constraintTop_toBottomOf="@+id/framenotification">
 
         <TextView
             android:id="@+id/tvaccount"
@@ -101,13 +101,13 @@
 
     <FrameLayout
         android:id="@+id/frame_about"
+        android:layout_marginTop="20dp"
         android:layout_width="365dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
         android:background="@drawable/button_background_white"
-        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
-        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+        app:layout_constraintEnd_toEndOf="@+id/frameaccount"
+        app:layout_constraintStart_toStartOf="@+id/frameaccount"
+        app:layout_constraintTop_toBottomOf="@+id/frameaccount">
 
         <TextView
             android:id="@+id/tvaboutapp"

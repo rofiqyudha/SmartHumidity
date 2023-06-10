@@ -67,8 +67,8 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         val currentUser = FirebaseAuth.getInstance().currentUser
-        if (currentUser != null && currentUser.email != null) {
-            binding.tvEmail.text = currentUser.email
+        if ((currentUser != null) && (currentUser.email != null)) {
+            currentUser.email.also { binding.tvEmail.text = it }
         }
     }
 
