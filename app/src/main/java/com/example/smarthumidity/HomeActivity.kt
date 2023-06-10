@@ -5,9 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class HomeActivity : AppCompatActivity() {
 
@@ -15,33 +19,18 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        val toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
 
-        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
-        val adapter = MyAdapter(getDataList())
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = GridLayoutManager(this, 2) // Set the desired span count
-
-        val navView = findViewById<BottomNavigationView>(R.id.nav_view)
-        navView.setOnNavigationItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.navigation_setting -> {
-                    val intent = Intent(this, SettingsActivity::class.java)
-                    startActivity(intent)
-                    true
-                }
-                R.id.navigation_profile -> {
-                    val intent = Intent(this, ProfileActivity::class.java)
-                    startActivity(intent)
-                    true
-                }
-                R.id.navigation_history -> {
-                    val intent = Intent(this, HistoryActivity::class.java)
-                    startActivity(intent)
-                    true
-                }
-                else -> true // Return true for other cases
-            }
-        }
+        val navController = findNavController(R.id.nav_host_fragment)
+        val appBarConfiguration = AppBarConfiguration.
+        Builder(R.id.navigation_home,
+            R.id.navigation_setting,
+            R.id.navigation_profile,
+            R.id.navigation_history).build()
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        val navBottom = findViewById<BottomNavigationView>(R.id.nav_bottom)
+        navBottom.setupWithNavController(navController)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -53,10 +42,5 @@ class HomeActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    private fun getDataList(): List<String> {
-        // Return your data list here
-        // Example:
-        return listOf("Item 1", "Item 2", "Item 3", "Item 4", "Item 5")
-    }
 }
 

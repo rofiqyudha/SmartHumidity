@@ -8,7 +8,7 @@
     tools:context=".settings.AboutActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
+        android:id="@+id/nav_bottom"
         android:layout_width="match_parent"
         android:layout_height="70sp"
         android:background="@color/white"
@@ -21,12 +21,12 @@
         app:menu="@menu/buttom_nav_menu" />
 
     <FrameLayout
-        android:layout_width="380dp"
-        android:layout_height="377dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginStart="10dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintBottom_toTopOf="@+id/nav_bottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,8 +34,9 @@
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="4dp"
+            android:layout_marginTop="100dp"
             android:layout_marginEnd="8dp"
             android:text="@string/about"
             android:textColor="@color/white"

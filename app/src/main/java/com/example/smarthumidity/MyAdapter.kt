@@ -11,12 +11,10 @@ class MyAdapter(private val dataList: List<String>) : RecyclerView.Adapter<MyAda
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_row_main, parent, false)
         return ViewHolder(view)
     }
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = dataList[position]
         holder.bind(item)
     }
-
     override fun getItemCount(): Int {
         return dataList.size
     }

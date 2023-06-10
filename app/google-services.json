@@ -34,6 +34,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446467572386:android:63fa8170cfa48f442ecdfb",
+        "android_client_info": {
+          "package_name": "com.example.smarthumidity1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446467572386-9fimp9a5jrg2f8qghdg5lll3sampjj2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjh6yaRumDWl5DYbdDA9JLm7S-RSyIY_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446467572386-9fimp9a5jrg2f8qghdg5lll3sampjj2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

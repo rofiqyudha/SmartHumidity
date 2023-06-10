@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blueapp2"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileFragment">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/ivProfile"
@@ -87,17 +87,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cvForm" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="70sp"
-        android:background="@color/white"
-        app:itemIconTint="@color/bottom_nav_item_color"
-        app:itemTextColor="@color/bottom_nav_item_color"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/buttom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
